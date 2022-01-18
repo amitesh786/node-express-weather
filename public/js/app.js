@@ -1,11 +1,4 @@
-console.log('App js loaded')
-
-// fetch('https://puzzle.mead.io/puzzle')
-// 	.then((res) => {
-// 		res.json().then( (data)=> {
-// 			console.log(data);
-// 		})
-// 	})
+console.log('Client Side JS js loaded')
 
 const weatherForm = document.querySelector('form')
 const searchInput = document.querySelector('input')
