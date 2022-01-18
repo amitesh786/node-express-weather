@@ -15,8 +15,9 @@ const forecast = (latitude, longitude, callback) => {
 			console.log('Error unable to connect..!!!')
 			callback('error unable to connect to location service... another try serach again !!!', undefined);
 		} else {
+			let messageText = 'Partly cloudy in the morning. It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.feelslike + '% chance of rain.'
 			console.log('Successfull connect..!!!')
-			callback(undefined, body.current.temperature);
+			callback(undefined, messageText);
 		}
 	})
 }
